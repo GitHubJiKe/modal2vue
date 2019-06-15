@@ -2,6 +2,8 @@
 
 > A simple modal component based on Vue, service to Vue project
 
+[HomePage](https://modal2vue-kqxajeikuv.now.sh)
+
 ## 安装
 
 npm i modal2vue
