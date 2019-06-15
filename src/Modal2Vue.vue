@@ -83,7 +83,8 @@ export default {
 .fade-leave-active {
   transition: opacity 0.4s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 .modal-container {
@@ -123,7 +124,7 @@ export default {
   outline: none;
   border-radius: 5px;
   font-size: 14pt;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
 }

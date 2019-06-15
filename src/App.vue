@@ -30,6 +30,9 @@ export default {
       smooth: true
     }
   },
+  mounted () {
+    this.openModal();
+  },
   methods: {
     openModal() {
       $modal2vue.onopen(this.$data);
