@@ -2,7 +2,12 @@
   <transition :name="transitionName">
     <div class="modal-container" v-if="open">
       <div class="modal-content" :style="{width: modalContentWidth}">
-        <span class="iconfont iconclose close" v-if="showClose" @click="onclose"></span>
+        <span
+          class="iconfont iconclose close"
+          :style="{right:closeRight}"
+          v-if="showClose"
+          @click="onclose"
+        ></span>
         <span :class="modalIconClass"></span>
         <p class="modal-title">{{title}}</p>
         <div class="modal-message">{{message}}</div>
@@ -75,6 +80,9 @@ export default {
     },
     modalContentWidth() {
       return window.outerWidth > 500 ? '30%' : '80%';
+    },
+    closeRight() {
+      return window.outerWidth > 500 ? '35%' : '10%';
     }
   }
 }
@@ -132,7 +140,6 @@ export default {
 }
 .close {
   position: absolute;
-  right: 10%;
   cursor: pointer;
 }
 .modal-title {
