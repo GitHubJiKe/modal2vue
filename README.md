@@ -2,7 +2,7 @@
 
 > A simple modal component based on Vue, service to Vue project
 
-[HomePage](https://modal2vue-kqxajeikuv.now.sh)
+[HomePage](https://modal2vue.ypf9319.now.sh/)
 
 ## 安装
 
