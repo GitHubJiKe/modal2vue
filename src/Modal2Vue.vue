@@ -1,7 +1,7 @@
 <template>
   <transition :name="transitionName">
     <div class="modal-container" v-if="open">
-      <div class="modal-content">
+      <div class="modal-content" :style="{width: modalContentWidth}">
         <span class="iconfont iconclose close" v-if="showClose" @click="onclose"></span>
         <span :class="modalIconClass"></span>
         <p class="modal-title">{{title}}</p>
@@ -72,6 +72,9 @@ export default {
     },
     transitionName() {
       return this.smooth ? "fade" : '';
+    },
+    modalContentWidth() {
+      return window.outerWidth > 500 ? '30%' : '80%';
     }
   }
 }
@@ -102,7 +105,6 @@ export default {
   user-select: none;
 }
 .modal-content {
-  min-width: 80%;
   height: 300px;
   background-color: white;
   border: 1px solid #bfbfbf;

@@ -1,7 +1,7 @@
 {
   "name": "modal2vue",
   "description": "a simple modal for vue based on vue2",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "author": "peter.yuan <pengfei.yuan@boldseas.com>",
   "license": "MIT",
   "private": false,
